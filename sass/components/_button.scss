@@ -12,6 +12,7 @@
       position: relative;
       font-size: 1.6rem;
   }
+
   &:hover {
       transform: translateY(-3px);
       /*box-shadow: 0 10px 20px rgba(0, 0, 0, .2);*/
@@ -33,6 +34,15 @@
           background-color:$color-white;
       }
   }
+
+  &--green {
+      background-color: $color-primary;
+      color: $color-white;
+      &::after {
+          background-color:$color-primary;
+      }
+  }
+
   &::after {
       content: "";
       display: inline-block;
